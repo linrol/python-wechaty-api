@@ -51,7 +51,7 @@ async def view(request: web.Request, bot: Wechaty):
 
     return web.json_response(data=dict(msg='Success'))
 
-async def puppetware_start_server(bot, host='0.0.0.0', port=12345):
+async def puppetware_start_server(bot, host='0.0.0.0', port=8082):
     context['bot'] = bot
 
     app = web.Application()
